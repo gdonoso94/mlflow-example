@@ -68,7 +68,7 @@ if __name__ == "__main__":
         'dependencies': [
             'python=3.7.0',
             'pyspark=2.3.0',
-            'nltk
+            'nltk'
             ]
             }
     
