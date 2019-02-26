@@ -62,4 +62,14 @@ if __name__ == "__main__":
     mlflow.log_metric("r2", r2)
     mlflow.log_metric("mae", mae)
 
-    mlflow.sklearn.log_model(lr, "model")
+    conda_deps = {
+        'name': 'mlflow-env',
+        'channels': ['defaults'],
+        'dependencies': [
+            'python=3.7.0',
+            'pyspark=2.3.0',
+            'nltk
+            ]
+            }
+    
+    mlflow.sklearn.log_model(lr, "model", conda_env = conda_deps)
