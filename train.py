@@ -69,7 +69,10 @@ if __name__ == "__main__":
             'python=3.7.0',
             'pyspark=2.3.0',
             {'pip' : 
-                'cloudpickle=0.8.0'}
+                [
+                    'cloudpickle=0.8.0'
+                ]
+            }
          ]}
     
     mlflow.sklearn.log_model(lr, "model", conda_env = conda_deps)
