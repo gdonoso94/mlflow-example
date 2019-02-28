@@ -66,8 +66,8 @@ if __name__ == "__main__":
         'name': 'mlflow-env',
         'channels': ['defaults'],
         'dependencies': [
-            'python=3.7.0',
-            'pyspark=2.3.0',
+            'python=3.5.0',
+            'scikit-learn=0.19.1',
             {'pip' : 
                 [
                     'cloudpickle=0.8.0'
