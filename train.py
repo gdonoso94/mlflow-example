@@ -70,7 +70,7 @@ if __name__ == "__main__":
             'scikit-learn=0.19.1',
             {'pip' : 
                 [
-                    'cloudpickle=0.8.0'
+                    'cloudpickle==0.8.0'
                 ]
             }
          ]}
